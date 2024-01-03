@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="to-do.css">
+    <title>To-Do Web-App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>To-Do Web-App</h1>
+        </div>
+        <div class="input-container">
+            <div class="title-container">
+                <label for="titleInput">Task Title:</label>
+                <input type="text" id="titleInput" placeholder="Enter task title">
+            </div>
+            <div class="description-container">
+                <label for="descriptionInput">Task Description:</label>
+                <textarea id="descriptionInput" placeholder="Enter task description"></textarea>
+            </div>
+            <div class="due-date-container">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate">
+            </div>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="tasks-container">
+            <div class="completed-tasks">
+                <h2>Completed Tasks</h2>
+                <ul id="completedTasksList"></ul>
+            </div>
+            <div class="pending-tasks">
+                <h2>Pending Tasks</h2>
+                <ul id="pendingTasksList"></ul>
+            </div>
+            <div class="all-tasks">
+                <h2>All Tasks</h2>
+                <ul id="tasksList"></ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created with ❤ by Adnan</p>
+        <p><a href="https://github.com/khanadnan22/OIB_SIP.git" target="_blank">GitHub</a> | <a href="www.linkedin.com/in/
+        khan-adnan-56a0651b0" target="_blank">LinkedIn</a></p>
+    </footer>
+    <script src="to-do.js"></script>
+</body>
+</html>
